@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.redes{
+    display: flex;
+    margin-right: 0.3em;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 0.5em;
+}
+h4{
+    color: white;
+    margin-left: 0.3em;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 15px;
+}
+#LogoAp{
+    width: 130px;
+}
+img{
+    width: 35px;
+    margin-right: 0.2em;
+}
+.btn{
+    margin-right: 0.3em;
+    margin-left: 0.3em;
+}
+
+/*..para la vista del celular..*/
+@media(max-width: 576px){
+.container{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 0.8em;
+}
+}
