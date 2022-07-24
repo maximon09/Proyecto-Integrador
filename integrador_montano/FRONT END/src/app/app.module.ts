@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 //servicios
-import { PortfolioService } from './servicios/portfolio.service';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -16,7 +14,9 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HardysoftComponent } from './components/hardysoft/hardysoft.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { FooterComponent } from './components/footer/footer.component';
-import{ HttpClientModule} from '@angular/common/http';
+import{ HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './components/home/home.component';
+import { LogInComponent } from './components/log-in/log-in.component';
 
 
 @NgModule({
@@ -31,6 +31,8 @@ import{ HttpClientModule} from '@angular/common/http';
     HardysoftComponent,
     ProyectoComponent,
     FooterComponent,
+    HomeComponent,
+    LogInComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,9 +40,7 @@ import{ HttpClientModule} from '@angular/common/http';
     NgCircleProgressModule.forRoot({}),
     HttpClientModule
   ],
-  providers: [
-    PortfolioService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

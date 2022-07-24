@@ -28,7 +28,7 @@ div{
         position: absolute;
         width: 15%;
         border-radius: 100%;
-        top: 440px;
+        top: 490px;
     }
 }
 @media(max-width: 575px){
