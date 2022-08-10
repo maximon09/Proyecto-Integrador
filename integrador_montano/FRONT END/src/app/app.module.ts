@@ -20,6 +20,11 @@ import { LogInComponent } from './components/log-in/log-in.component';
 import { FormsModule } from '@angular/forms';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+import { NeweducacionComponent } from './components/educacion/neweducacion.component';
+import { EditestudioComponent } from './components/educacion/editestudio.component';
+import { NewskillComponent } from './components/hardysoft/newskill.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { EditskillsComponent } from './components/hardysoft/editskills.component';
 
 @NgModule({
   declarations: [
@@ -37,13 +42,18 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
     LogInComponent,
     NewExperienciaComponent,
     EditExperienciaComponent,
+    NeweducacionComponent,
+    EditestudioComponent,
+    NewskillComponent,
+    EditskillsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,61 @@
+.row{
+    padding:20px;
+}
+
+div{
+    background-color: blue;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*etiqueta nombre*/
+#name{
+    font-weight: bold;
+    margin-top: 10%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*etiqueta titulo*/
+#titulo{
+    font-weight: bold;
+    margin-top: 10%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*estilo de la foto de perfil*/
+@media(min-width: 576px){
+    #foto{
+        position: absolute;
+        width: 15%;
+        border-radius: 100%;
+        top: 490px;
+    }
+}
+@media(max-width: 575px){
+    #foto{
+        position: absolute;
+        width: 30%;
+        border-radius: 100%;
+        top: 440px;
+        left: 35%;
+    }
+}
+@media(max-width: 380px){
+    #foto{
+        position: absolute;
+        width: 26%;
+        border-radius: 100%;
+        top: 460px;
+        left: 40%;
+    }
+}
+
+
+@media(min-width: 580px){
+    #foto{
+        position: absolute;
+        width: 15%;
+        border-radius: 100%;
+        top: 450px;
+    }
+}
