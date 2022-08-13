@@ -25,6 +25,8 @@ import { EditestudioComponent } from './components/educacion/editestudio.compone
 import { NewskillComponent } from './components/hardysoft/newskill.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { EditskillsComponent } from './components/hardysoft/editskills.component';
+import { NewproyectoComponent } from './components/proyecto/newproyecto.component';
+import { EditproyectoComponent } from './components/proyecto/editproyecto.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +48,8 @@ import { EditskillsComponent } from './components/hardysoft/editskills.component
     EditestudioComponent,
     NewskillComponent,
     EditskillsComponent,
+    NewproyectoComponent,
+    EditproyectoComponent,
   ],
   imports: [
     BrowserModule,

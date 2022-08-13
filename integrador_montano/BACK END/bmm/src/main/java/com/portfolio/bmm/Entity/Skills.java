@@ -26,10 +26,6 @@ public class Skills {
         this.imgSkill = imgSkill;
     }
 
-    public Skills(String nombreSkill, String porcentajeSkill) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
     //Getter & Setter
 
     public int getId() {

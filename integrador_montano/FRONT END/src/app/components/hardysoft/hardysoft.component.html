@@ -12,19 +12,19 @@
         <tbody>
             <tr *ngFor="let Skills of skills">
                 <td>
-                    <h3>{{Skills.nombreSkill}}</h3>
+                    <h3 id="name">{{Skills.nombreSkill}}</h3>
+                </td>
+                <td><img src="{{Skills.imgSkill}}" alt="" width="80px">
                 </td>
                 <td>
                     <h4 class="text-center">{{Skills.porcentajeSkill}} %</h4>
                     <mat-progress-bar mode="determinate" [value]="Skills.porcentajeSkill"></mat-progress-bar>
                 </td>
-                <td><img src="Skills.imgSkill" alt="" width="50px">
-                </td>
                 <td *ngIf="isLogged">
                     <button class="btn btn-light" routerLink="/editskill/{{Skills.id}}"> 
                         <i class="bi bi-pen"></i>Editar</button>
                 </td>
-                <td *ngIf="isLogged" rol="ROLE_ADMIN">
+                <td *ngIf="isLogged">
                     <button class="btn btn-danger" (click)="delete(Skills.id)"> <i class="bi bi-trash-fill">
                     </i>Borrar</button></td>
                   </tr>

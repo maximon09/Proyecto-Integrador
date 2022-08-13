@@ -9,3 +9,7 @@ div{
 h1, h3{
     display: inline;
 }
+
+#name{
+    font-weight: bold;
+}
