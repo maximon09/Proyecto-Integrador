@@ -8,15 +8,17 @@ public class dtoEducacion {
     private String nombreE;
     @NotBlank
     private String descripcionE;
+    private String imgE;
 
     //Constructor
 
     public dtoEducacion() {
     }
 
-    public dtoEducacion(String nombreE, String descripcionE) {
+    public dtoEducacion(String nombreE, String descripcionE, String imgE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
+        this.imgE = imgE;
     }
     
     //Getter & Setter
@@ -37,5 +39,12 @@ public class dtoEducacion {
         this.descripcionE = descripcionE;
     }
     
+    public String getimgE(){
+        return imgE;
+    }
+    
+    public void setImgE(String imgE){
+        this.imgE = imgE;
+    }
 }
 

@@ -3,8 +3,9 @@
 }
 
 div{
-    background-color: lightblue;
-}
+    background-image: linear-gradient(lightblue, rgb(25, 81, 100))
+    }
+
 
 h1, h3{
     display: inline;

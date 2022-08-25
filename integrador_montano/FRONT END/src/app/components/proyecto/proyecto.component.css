@@ -1,9 +1,10 @@
 .row{
-    padding: 20px;
+    padding: 10px;
 }
 
 div{
-    background-color: lightblue;}
+    background-image: linear-gradient(lightblue, rgb(25, 81, 100))
+}
 
 #name{
     font-weight: bold;
@@ -11,5 +12,4 @@ div{
 
 #img-proyecto{
     box-shadow: 10px -15px 30px #835185;
-    border-radius: 50%;
 }
