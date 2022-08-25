@@ -14,3 +14,8 @@ h1, h3{
 #name{
     font-weight: bold;
 }
+
+#imgE{
+    box-shadow: 10px -15px 30px #835185;
+    align-items: center;
+}
