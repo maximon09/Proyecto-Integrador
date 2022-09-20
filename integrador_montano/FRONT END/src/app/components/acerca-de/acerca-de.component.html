@@ -1,18 +1,20 @@
 <div class="row">
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img src="../../../assets/foto de perfil.jpg" class="img-fluid" id="foto">
+        <img src={{persona.img}} class="img-fluid" id="foto">
     </div>
 
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <p id="name">{{persona.nombre}} {{persona.apellido}}</p>
-        <p id="titulo">Full Stack Developer Junior</p>
+        <p id="name">{{persona.nombre}}</p>
+        <p id="titulo">{{persona.profesion}}</p>
     </div>
 
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
         <span>
             <h1>Acerca de mí</h1>
-            <h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ducimus quas praesentium sapiente incidunt, libero eaque doloribus, ratione harum tempore vitae ullam ipsum ipsa blanditiis nam hic unde corrupti in?</p></h4>
+            <h4><p>{{persona.descripcion}}</p></h4>
         </span>
+        <button class="btn btn-light" routerLink="/editpersona/{{persona.id}}" *ngIf="isLogged"> 
+            <i class="bi bi-pen"></i></button>
     </div>
 </div>
 

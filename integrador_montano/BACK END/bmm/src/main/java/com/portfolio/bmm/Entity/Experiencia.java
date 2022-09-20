@@ -14,7 +14,7 @@ public class Experiencia {
     private String descripcionE;
     private String imgE;
     
-    //COnstructor
+    //Constructor
 
     public Experiencia() {
     }
@@ -24,7 +24,7 @@ public class Experiencia {
         this.descripcionE = descripcionE;
         this.imgE = imgE;
     }
-    
+   
     //Getter & Setter
 
     public int getId() {

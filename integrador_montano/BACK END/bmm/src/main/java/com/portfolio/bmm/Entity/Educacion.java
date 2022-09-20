@@ -16,6 +16,7 @@ public class Educacion {
     private String imgE;
 
     //Constructor
+
     public Educacion() {
     }
 
@@ -25,7 +26,8 @@ public class Educacion {
         this.imgE = imgE;
     }
 
-//Getter & Setter
+    //Getter & Setter
+
     public int getId() {
         return id;
     }
@@ -57,5 +59,5 @@ public class Educacion {
     public void setImgE(String imgE) {
         this.imgE = imgE;
     }
-
+    
 }
