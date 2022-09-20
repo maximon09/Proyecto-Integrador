@@ -27,6 +27,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { EditskillsComponent } from './components/hardysoft/editskills.component';
 import { NewproyectoComponent } from './components/proyecto/newproyecto.component';
 import { EditproyectoComponent } from './components/proyecto/editproyecto.component';
+import { EditAcercaComponent } from './components/acerca-de/edit-acerca.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { EditproyectoComponent } from './components/proyecto/editproyecto.compon
     EditskillsComponent,
     NewproyectoComponent,
     EditproyectoComponent,
+    EditAcercaComponent,
   ],
   imports: [
     BrowserModule,

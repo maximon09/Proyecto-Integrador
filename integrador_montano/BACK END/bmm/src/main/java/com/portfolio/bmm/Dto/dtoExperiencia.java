@@ -6,7 +6,6 @@ import javax.validation.constraints.NotBlank;
 public class dtoExperiencia {
     @NotBlank
     private String nombreE;
-    @NotBlank
     private String descripcionE;
     private String imgE;
     
@@ -20,7 +19,7 @@ public class dtoExperiencia {
         this.descripcionE = descripcionE;
         this.imgE = imgE;
     }
-    
+
     //Getter & Setter
 
     public String getNombreE() {

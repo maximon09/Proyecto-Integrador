@@ -1,41 +1,24 @@
-package com.portfolio.bmm.Entity;
+package com.portfolio.bmm.Dto;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
-@Entity
-public class Persona {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+public class dtoPersona {
     private String nombre;
     private String descripcion;
     private String profesion;
     private String img;
     
     //Constructor
-
-    public Persona() {
+    public dtoPersona() {
     }
 
-    public Persona(String nombre, String descripcion, String profesion, String img) {
+    public dtoPersona(String nombre, String descripcion, String profesion, String img) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.profesion = profesion;
         this.img = img;
     }
-    
+  
     //Getter & Setter
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getNombre() {
         return nombre;
@@ -69,7 +52,4 @@ public class Persona {
         this.img = img;
     }
     
-    
 }
-
-

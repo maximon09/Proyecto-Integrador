@@ -20,7 +20,7 @@ public class dtoEducacion {
         this.descripcionE = descripcionE;
         this.imgE = imgE;
     }
-    
+
     //Getter & Setter
 
     public String getNombreE() {
@@ -38,13 +38,14 @@ public class dtoEducacion {
     public void setDescripcionE(String descripcionE) {
         this.descripcionE = descripcionE;
     }
-    
-    public String getimgE(){
+
+    public String getImgE() {
         return imgE;
     }
-    
-    public void setImgE(String imgE){
+
+    public void setImgE(String imgE) {
         this.imgE = imgE;
     }
+    
 }
 
