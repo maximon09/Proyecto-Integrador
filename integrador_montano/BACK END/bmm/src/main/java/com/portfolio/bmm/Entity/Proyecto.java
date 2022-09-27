@@ -14,15 +14,17 @@ public class Proyecto {
     private String nombreProyecto;
     private String descripcionProyecto;
     private String imagenProyecto;
+    private String linkProyecto;
 
     //Constructor
     public Proyecto() {
     }
 
-    public Proyecto(String nombreProyecto, String descripcionProyecto, String imagenProyecto) {
+    public Proyecto(String nombreProyecto, String descripcionProyecto, String imagenProyecto, String linkProyecto) {
         this.nombreProyecto = nombreProyecto;
         this.descripcionProyecto = descripcionProyecto;
         this.imagenProyecto = imagenProyecto;
+        this.linkProyecto = linkProyecto;
     }
 
     //Getter & Setter
@@ -58,4 +60,11 @@ public class Proyecto {
         this.imagenProyecto = imagenProyecto;
     }
 
+    public String getLinkProyecto() {
+        return linkProyecto;
+    }
+
+    public void setLinkProyecto(String linkProyecto) {
+        this.linkProyecto = linkProyecto;
+    }
 }

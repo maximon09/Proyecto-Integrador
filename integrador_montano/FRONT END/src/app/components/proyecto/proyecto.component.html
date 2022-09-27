@@ -1,9 +1,11 @@
     <div class="row">
-        <h1>Proyectos Realizados</h1>
         <div class="container">
-            <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
-                Nuevo Proyecto
-            </button>
+            <h1>Proyectos Realizados</h1>
+            <div>
+                <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+                    Nuevo Proyecto
+                </button>
+            </div>
             <div class="text-center row row-cols-1 row-cols-md-3 g-4">
                 <div class="col" *ngFor="let Proyecto of proyecto">
                     <div class="card text-dark bg-info" style="width: 18rem;">
@@ -11,6 +13,7 @@
                         <div class="card-body">
                             <h1 class="card-title #name">{{Proyecto.nombreProyecto}}</h1>
                             <p class="card-text">{{Proyecto.descripcionProyecto}}</p>
+                            <a href={{Proyecto.linkProyecto}} target="_blank">Ir al sitio</a>
                         </div>
                     </div>
                     <button class="btn btn-light" routerLink="/editproyecto/{{Proyecto.id}}" *ngIf="isLogged"> 

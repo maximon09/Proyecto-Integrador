@@ -11,16 +11,19 @@ public class dtoProyecto {
     private String descripcionProyecto;
     @NotBlank
     private String imagenProyecto;
+    @NotBlank
+    private String linkProyecto;
     
     //Constructor
 
     public dtoProyecto() {
     }
 
-    public dtoProyecto(String nombreProyecto, String descripcionProyecto, String imagenProyecto) {
+    public dtoProyecto(String nombreProyecto, String descripcionProyecto, String imagenProyecto, String linkProyecto) {
         this.nombreProyecto = nombreProyecto;
         this.descripcionProyecto = descripcionProyecto;
         this.imagenProyecto = imagenProyecto;
+        this.linkProyecto = linkProyecto;
     }
     
     //Getter & Setter
@@ -49,5 +52,11 @@ public class dtoProyecto {
         this.imagenProyecto = imagenProyecto;
     }
     
-    
+    public String getLinkProyecto() {
+        return linkProyecto;
+    }
+
+    public void setLinkProyecto(String linkProyecto) {
+        this.linkProyecto = linkProyecto;
+    }
 }
