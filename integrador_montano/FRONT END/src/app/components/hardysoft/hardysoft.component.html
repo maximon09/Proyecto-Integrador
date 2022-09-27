@@ -1,36 +1,35 @@
-<div class="row">
-  <h1>Habilidades</h1>
-  <div class="col-lg-2">
-    <button type="button" class="btn btn-dark" routerLink="/nuevaskill" *ngIf="isLogged">
-        Nueva Habilidad
-    </button>
-</div>  
-
-<div class="col-lg-1 col-md-1 col-sm-1"></div>
-<div class="col-lg-11 col-md-11 col-sm-11">
-    <table class="table">
-        <tbody>
-            <tr *ngFor="let Skills of skills">
-                <td>
-                    <h3 id="name">{{Skills.nombreSkill}}</h3>
-                </td>
-                <td><img src="{{Skills.imgSkill}}" alt="" width="80px">
-                </td>
-                <td>
-                    <h4 class="text-center">{{Skills.porcentajeSkill}} %</h4>
-                    <mat-progress-bar mode="determinate" [value]="Skills.porcentajeSkill"></mat-progress-bar>
-                </td>
-                <td *ngIf="isLogged">
-                    <button class="btn btn-light" routerLink="/editskill/{{Skills.id}}"> 
-                        <i class="bi bi-pen"></i></button>
-                </td>
-                <td *ngIf="isLogged">
-                    <button class="btn btn-danger" (click)="delete(Skills.id)"> <i class="bi bi-trash-fill">
-                    </i></button></td>
-                  </tr>
-              </tbody>
-          </table>
-      </div>
- 
+  <div class="row">
+    <h1>Habilidades</h1>
+    <div class="container">
+      <button type="button" class="btn btn-dark" routerLink="/nuevaskill" *ngIf="isLogged">
+          Nueva Habilidad
+      </button>
+  </div>  
+  <div class="text-center col-sm-4 col-md-4 col-lg-4" *ngFor="let Skills of skills">
+    <img src="{{Skills.imgSkill}}" alt="">
+    <circle-progress
+    [percent]="(Skills.porcentajeSkill)"
+    [radius]="60"
+    [title]="(Skills.nombreSkill)"
+    [titleFontSize]="'10'"
+    [titleFontWeight]="'10'"
+    [showSubtitle]="false"
+    [showUnits]="false"
+    [outerStrokeWidth]="10"
+    [innerStrokeWidth]="10"
+    [outerStrokeColor]="'#00358e'"
+    [innerStrokeColor]="'#e7e8ea'"
+    [animation]="true"
+    [animationDuration]="320"
+  ></circle-progress>
+  <td *ngIf="isLogged">
+    <button class="btn btn-light" routerLink="/editskill/{{Skills.id}}"> 
+        <i class="bi bi-pen"></i></button>
+  </td>
+  <td *ngIf="isLogged">
+    <button class="btn btn-danger" (click)="delete(Skills.id)"> <i class="bi bi-trash-fill">
+    </i></button>
+  </td>
+  </div>
 </div>
 

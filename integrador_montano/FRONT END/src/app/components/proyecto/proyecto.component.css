@@ -1,15 +1,13 @@
 .row{
-    padding: 30px;
+    padding: 10px;
+    background-color: lightblue;
 }
 
-div{
-    background: lightblue
+h1, h3{
+    display: inline;
 }
 
 #name{
     font-weight: bold;
 }
 
-#img-proyecto{
-    box-shadow: 10px -15px 30px #835185;
-}

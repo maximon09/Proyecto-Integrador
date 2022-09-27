@@ -1,35 +1,22 @@
 <div class="row">
     <h1>Experiencia Laboral</h1>
-    <div class="col-lg-2">
-        <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
-            Nueva Experiencia
-        </button>
-    </div>
-
-    <div class="col-lg-1 col-md-1 col-sm-1"></div>
-    <div class="col-lg-11 col-md-11 col-sm-11">
-        <table class="table">
-            <tbody>
-                <tr *ngFor="let Experiencia of expe">
-                    <td><img src="{{Experiencia.imgE}}" alt="" width="150px" id="imgE">
-                    </td>
-                    <td>
-                        <h3 id="name">{{Experiencia.nombreE}}</h3>
-                    </td>
-                    <td>
-                        <h4>{{Experiencia.descripcionE}}</h4>
-                    </td>
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}"> 
-                            <i class="bi bi-pen"></i></button>
-                    </td>
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-danger" (click)="delete(Experiencia.id)"> <i class="bi bi-trash-fill">
+        <div class="container">
+            <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+                Nueva Experiencia
+            </button>
+            <div class="text-center row row-cols-1 row-cols-md-3 g-4">
+                <div class="col" *ngFor="let Experiencia of expe">
+                    <div class="card text-dark bg-info" style="width: 18rem;">
+                        <img src="{{Experiencia.imgE}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h1 class="card-title #name">{{Experiencia.nombreE}}</h1>
+                            <p class="card-text">{{Experiencia.descripcionE}}</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged"> 
+                        <i class="bi bi-pen"></i></button>
+                        <button class="btn btn-danger" (click)="delete(Experiencia.id)" *ngIf="isLogged"> <i class="bi bi-trash-fill">
                         </i></button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-</div>
+                </div>
+        </div>
+        </div>

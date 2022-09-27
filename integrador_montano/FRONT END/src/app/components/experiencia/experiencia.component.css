@@ -1,21 +1,12 @@
 .row{
-    padding: 30px;
-}
-
-div{
-    background: lightblue
+    padding: 10px;
+    background-color: lightblue;
 }
 
 h1, h3{
     display: inline;
-    align-items: center;
 }
 
 #name{
     font-weight: bold;
-}
-
-#imgE{
-    box-shadow: 10px -15px 30px #835185;
-    align-items: center;
 }

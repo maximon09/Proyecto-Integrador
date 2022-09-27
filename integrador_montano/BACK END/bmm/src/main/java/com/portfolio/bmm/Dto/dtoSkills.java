@@ -7,14 +7,14 @@ public class dtoSkills {
     @NotBlank
     private String nombreSkill;
     @NotBlank
-    private String porcentajeSkill;
+    private int porcentajeSkill;
     @NotBlank
     private String imgSkill;
     
     //Constructor
         public dtoSkills() {
     }
-    public dtoSkills(String nombreSkill, String porcentajeSkill, String imgSkill) {
+    public dtoSkills(String nombreSkill, int porcentajeSkill, String imgSkill) {
         this.nombreSkill = nombreSkill;
         this.porcentajeSkill = porcentajeSkill;
         this.imgSkill = imgSkill;
@@ -29,11 +29,11 @@ public class dtoSkills {
         this.nombreSkill = nombreSkill;
     }
 
-    public String getPorcentajeSkill() {
+    public int getPorcentajeSkill() {
         return porcentajeSkill;
     }
 
-    public void setPorcentajeSkill(String porcentajeSkill) {
+    public void setPorcentajeSkill(int porcentajeSkill) {
         this.porcentajeSkill = porcentajeSkill;
     }
 

@@ -12,7 +12,7 @@ public class Skills {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nombreSkill;
-    private String porcentajeSkill;
+    private int porcentajeSkill;
     private String imgSkill;
     
     //Constructor
@@ -20,7 +20,7 @@ public class Skills {
     public Skills() {
     }
 
-    public Skills(String nombreSkill, String porcentajeSkill, String imgSkill) {
+    public Skills(String nombreSkill, int porcentajeSkill, String imgSkill) {
         this.nombreSkill = nombreSkill;
         this.porcentajeSkill = porcentajeSkill;
         this.imgSkill = imgSkill;
@@ -44,11 +44,11 @@ public class Skills {
         this.nombreSkill = nombreSkill;
     }
 
-    public String getPorcentajeSkill() {
+    public int getPorcentajeSkill() {
         return porcentajeSkill;
     }
 
-    public void setPorcentajeSkill(String porcentajeSkill) {
+    public void setPorcentajeSkill(int porcentajeSkill) {
         this.porcentajeSkill = porcentajeSkill;
     }
 
