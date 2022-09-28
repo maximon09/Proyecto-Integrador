@@ -8,6 +8,7 @@ public class dtoEducacion {
     private String nombreE;
     @NotBlank
     private String descripcionE;
+    @NotBlank
     private String imgE;
 
     //Constructor
@@ -46,6 +47,5 @@ public class dtoEducacion {
     public void setImgE(String imgE) {
         this.imgE = imgE;
     }
-    
 }
 

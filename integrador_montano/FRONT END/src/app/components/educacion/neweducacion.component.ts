@@ -13,6 +13,7 @@ export class NeweducacionComponent implements OnInit {
   descripcionE: string;
   imgE: string;
 
+
   constructor(private educacionS: EducacionService, private router: Router) { }
 
   ngOnInit(): void {

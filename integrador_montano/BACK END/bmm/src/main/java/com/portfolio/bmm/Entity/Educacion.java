@@ -59,5 +59,4 @@ public class Educacion {
     public void setImgE(String imgE) {
         this.imgE = imgE;
     }
-    
 }
